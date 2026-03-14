@@ -1,0 +1,14 @@
+[project]
+name = "mictestbox"
+version = "0.1.0"
+description = "Coupler-based frequency response tester for theater lavalier microphones"
+requires-python = ">=3.9"
+dependencies = [
+    "sounddevice>=0.4",
+    "scipy>=1.7",
+    "matplotlib>=3.5",
+    "numpy>=1.21",
+]
+
+[project.scripts]
+mic-test = "mic_test:main"
